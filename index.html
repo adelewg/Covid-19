@@ -16,6 +16,12 @@
 			  font-size: 1rem;
 		  }
 		  
+		  .container {
+			  width: 70%;
+			  margin: 0 auto;
+				  
+		  }
+		  
 		  #data-go-estimate,
 		  input{
 			  width: 100%;
@@ -44,35 +50,40 @@
   
   <body>
     <header>
-      <h1>Covid-19 Impact Estimation Tool</h1>
-      <p><em>An attempt helping society and leaders prepare for the real big problem
-        of COVID-19, which is its impact on lives, health systems, supply chains, and the economy</em></p>
+	    <div class = "container">
+	      <h1>Covid-19 Impact Estimation Tool</h1>
+	      <p><em>An attempt helping society and leaders prepare for the real big problem
+		of COVID-19, which is its impact on lives, health systems, supply chains, and the economy</em></p>
+	    </div>
     </header>
+	  
+	  <div class = "container">
     
-    <form action = "" method = "post">
-      <label for = "data-population">Population</label><br>
-      <input type = "number" placehoder = "please enter population" id = "data-population"></input><br>
-    
-      <label for = "data-time-to-elapse">Time To Elapse</label><br>
-      <input type = "number" placehoder = "please enter the amount of time to elapase" id = "data-time-to-elapse"></input><br>
-      
-      <label for = "data-reported-cases">Reported Cases</label><br>
-      <input type = "number" placehoder = "please enter the number of reported cases" id = "data-reported-cases"></input><br>
+		    <form action = "" method = "post">
+		      <label for = "data-population">Population</label><br>
+		      <input type = "number" placehoder = "please enter population" id = "data-population"></input><br>
 
-      <label for = "data-total-hospital-beds">Total hospital beds</label><br>
-      <input type = "number" placehoder = "please enter the number of hospital beds" id = "data-total-hospital-beds"></input><br>
-      
-      <label for = "data-period-type">Period Type</label><br>
-        <select id = "data-period-type">
-                      <option>Months</option>
-                      <option>Weeks</option>
-                      <option>Days</option>
-        </select><br>
-                      
-       <button id = "data-go-estimate" type = "submit">Submit</button>
-      
+		      <label for = "data-time-to-elapse">Time To Elapse</label><br>
+		      <input type = "number" placehoder = "please enter the amount of time to elapase" id = "data-time-to-elapse"></input><br>
 
-    </form>
+		      <label for = "data-reported-cases">Reported Cases</label><br>
+		      <input type = "number" placehoder = "please enter the number of reported cases" id = "data-reported-cases"></input><br>
+
+		      <label for = "data-total-hospital-beds">Total hospital beds</label><br>
+		      <input type = "number" placehoder = "please enter the number of hospital beds" id = "data-total-hospital-beds"></input><br>
+
+		      <label for = "data-period-type">Period Type</label><br>
+			<select id = "data-period-type">
+				      <option>Months</option>
+				      <option>Weeks</option>
+				      <option>Days</option>
+			</select><br>
+
+		       <button id = "data-go-estimate" type = "submit">Submit</button>
+
+
+		    </form>
+	</div>
 
 
   </body>
